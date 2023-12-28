@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         task1.hmn();
         task2.cty();
+        task3.cntr();
+        task4.frct();
     }
     class task1 {
         public static void hmn() {
@@ -23,5 +25,27 @@ public class Main {
                 System.out.println("Новая численность населения: " + two.getnumberOfInhabitants());
             }
         }
+
+    class task3{
+        public static void cntr() {
+            Country three = new Country();
+            System.out.println(three);
+            System.out.println("Новое колличество жителей страны: " + three.getnumberOfInhabitantsinTheCountry());
+            three.setnameOfTheCapitalCity("Stavanger");
+            System.out.println("Новая столица страны: " + three.getnameOfTheCapitalCity());
+        }
+    }
+
+    class task4{
+        public static void frct() {
+            Fraction four = new Fraction();
+            System.out.println(four);
+            System.out.println("Новый числитель: " + four.getnumerator());
+            four.setgetnumerator("Stavanger");
+            System.out.println("Новый знаменатель: " + four.getdenominator());
+        }
+    }
+
+
     }
 
